@@ -1,39 +1,35 @@
 {
   "name": "codenix-sv/bitfinex-api",
-  "description": "PHP client for the Bitfinex API",
-  "keywords": [
-    "bitfinex",
-    "bitcoin",
-    "btc",
-    "bitfinex-api"
-  ],
   "type": "library",
-  "license": "BSD-3-Clause",
+  "description": "PHP client for Bitfinex API",
+  "homepage": "https://github.com/codenix-sv/bitfinex-api",
+  "keywords": ["client", "api", "php", "bitfinex", "rest", "bitfinex-api", "exchange"],
+  "license": "MIT",
   "support": {
     "issues": "https://github.com/codenix-sv/bitfinex-api/issues?state=open",
     "source": "https://github.com/codenix-sv/bitfinex-api"
   },
   "authors": [
     {
-      "name": "Vladymyr Svyryd",
+      "name": "Volodymyr Svyryd",
       "email": "codenix.sv@gmail.com",
       "role": "Developer"
     }
   ],
   "require": {
-    "php": ">=7.1"
+    "php": "^7.2",
+    "ext-json": "*"
+
   },
   "require-dev": {
-    "phpunit/phpunit": "~6.0"
+    "phpunit/phpunit": "^8.0",
+    "guzzlehttp/guzzle": "~6.0"
   },
   "autoload": {
-    "psr-4": {
-      "codenixsv\\Bitfinex\\": "src/"
-    }
+    "psr-4": { "Codenixsv\\BitfinexApi\\": "src/" }
   },
   "autoload-dev": {
-    "psr-4": {
-      "codenixsv\\B itfinex\\": "tests/"
-    }
-  }
+    "psr-4": { "Codenixsv\\BitfinexApi\\Tests\\": "tests/"}
+  },
+  "prefer-stable": true
 }
