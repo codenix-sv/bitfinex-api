@@ -6,6 +6,8 @@
 
 A simple PHP wrapper for [Bitfinex API](https://docs.bitfinex.com/docs/rest-general). [Bitfinex](https://www.bitfinex.com) The world's largest and most advanced cryptocurrency trading platform
 
+Pay attention to the [WebSocket client in PHP for the Bitfinex API](https://github.com/codenix-sv/bitfinex-api-ws)
+
 ## Requirements
 
 * PHP >= 7.2
